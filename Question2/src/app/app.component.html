@@ -1,0 +1,16 @@
+<div>
+    <div class="m-2 ml-0">
+        <label for="inputText">FILTER</label><br>
+        <input id="inputText" [(ngModel)]="inputText" (ngModelChange)="InputChanged($event)">
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>Categories</th>
+            </tr>
+            <tr *ngFor="let item of categories">
+                <td>{{item}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
