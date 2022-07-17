@@ -1,0 +1,12 @@
+.box{
+    display: flex;
+    div:nth-child(1) {
+        min-width: 200px;
+    }
+    div:nth-child(2) {
+        width: 100%;
+    }
+    div:nth-child(3) {
+        min-width: 300px;
+    }
+}

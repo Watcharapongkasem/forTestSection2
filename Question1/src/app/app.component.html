@@ -1,0 +1,13 @@
+<div class="box">
+  <div><input #input type="number" name="inputNumber" [(ngModel)]="inputNumber" (ngModelChange)="InputChanged($event)">
+  </div>
+  <div>
+    <select [(ngModel)]="selectMode" (ngModelChange)="selectChanged($event)">
+      <option value="isPrime">isPrime</option>
+      <option value="isFibonacci">isFibonacci</option>
+    </select>
+  </div>
+  <div>
+    {{result}}
+  </div>
+</div>
